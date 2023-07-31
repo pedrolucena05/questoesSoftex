@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function containsOnlyNumbers(str) {
+            for (let i = 0; i < str.length; i++) {
+                if (isNaN(Number(str[i]))) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        let nome = prompt("Nome: ");
+        let anoNascimento = prompt("Ano de nascimento: ");
+        let teste = containsOnlyNumbers(anoNascimento);
+        while (teste == false || (anoNascimento < 1922 || anoNascimento > 2021)) {
+            anoNascimento = prompt("Ano de nacimento invalido, Digite novamente: ");
+            teste = containsOnlyNumbers(anoNascimento);
+        }
+
+        anoNascimento = Number(anoNascimento);
+        let idade = 2022 - anoNascimento;
+        alert("Nome: " + nome + " | Idade: " + idade);
+
+    </script>
+</body>
+</html>
