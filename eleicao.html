@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const candidatos = {
+            x: "889",
+            y: "847",
+            z: "515"
+        };
+
+        let x = 0;
+        let y = 0;
+        let z = 0;
+        let branco = 0;
+        let nulo = 0;
+
+        while (true) {
+            let voto = prompt("Voto: ");
+            
+            if (voto == candidatos.x) {
+                x++;
+            }
+            
+            else if (voto == candidatos.y) {
+                y++;
+            }
+
+            else if (voto == candidatos.z) {
+                z++;
+            }
+
+            else if (voto == 0) {
+                branco++;
+            }
+            
+            else{
+                nulo++;
+            }
+
+            let continuar = prompt("Deseja continuar? 1-Sim | 2-Nao");
+            while (continuar != 1 && continuar != 2) {
+                continuar = prompt("Digite 1 para sim e 2 para nao: ");
+            }
+            if (continuar == 2) {
+                break;
+            }
+        }
+
+        if (x >= y && x >= z) {
+            if (y >= z) {
+                alert (`1- Candidato X: ${x} votos | 2-  Candidato Y: ${y} votos | Candidato Z: ${z} votos | Branco: ${branco} votos | Nulo: ${nulo} votos`);
+            }
+            else {
+                alert (`1- Candidato X ${x} | 2-  Candidato Y ${z} votos |  Candidato Z ${y} votos | Branco: ${branco} votos | Nulo: ${nulo} votos`); 
+            }
+        }
+
+        else if (y >= x && y >= z){
+            if (x >= z) {
+                alert (`1- Candidato Y: ${y} votos | 2-  Candidato X: ${x} votos | Candidato Z: ${z} votos | Branco: ${branco} votos | Nulo: ${nulo} votos`);
+            }
+            else {
+                alert (`1- Candidato Y: ${y} votos | 2-  Candidato Z: ${z} votos | Candidato X: ${x} votos | Branco: ${branco} votos | Nulo: ${nulo} votos`);
+            }
+        }
+
+        else {
+            if (x >= y) {
+                alert (`1- Candidato Z: ${z} votos | 2-  Candidato X: ${x} votos | Candidato Y: ${y} votos | Branco: ${branco} votos | Nulo: ${nulo} votos`);
+            }
+            else {
+                alert (`1- Candidato Z: ${z} votos | 2-  Candidato Y: ${y} votos | Candidato X: ${x} votos | Branco: ${branco} votos | Nulo: ${nulo} votos`);
+            }  
+        }
+
+    </script>
+</body>
+</html>
