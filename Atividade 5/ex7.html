@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while (true) {
+            let caractere = prompt("Caractere: ");
+            if (caractere.length > 1) {
+                alert("Voce digitou uma String.")
+            }
+            else {
+                caractere.toLowerCase;
+                if ( /\d/.test(caractere)) {
+                    alert ("Caractere incorreto!");
+                }
+                else {
+                    if (caractere == 'a' || caractere == 'e' || caractere == 'i' || caractere == 'o' == caractere == 'u') {
+                        alert ("O caractere é uma vogal");
+                        break;
+                    }
+                    else {
+                        alert ("O caractere é uma consoante");
+                        break;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

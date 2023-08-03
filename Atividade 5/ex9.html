@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Sistema de Calculo de IMC</h2>
+    <label for="peso">Peso: </label>
+    <input type="text" id="peso">
+
+    <br>
+    
+    <label for="peso">Altura: </label>
+    <input type="text" id="altura">
+
+    <br>
+
+    <button onclick="calcularIMC()">calcularIMC</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIMC () {
+            const peso = parseFloat(document.getElementById("peso").value);
+            const altura = parseFloat(document.getElementById("altura").value);
+            let IMC = peso/(altura*altura);
+
+            let resultado = "";
+            
+            if (IMC < 18.5) {
+                resultado = "Você está abaixo do peso";
+            }
+            else if (IMC >= 18.5 && IMC < 25) {
+                resultado = "Você está no peso ideal";
+            }
+            else if (IMC >= 25 && IMC < 30) {
+                resultado = "Você está levemente acima do peso";
+            }
+            else if (IMC >= 30 && IMC < 35) {
+                resultado = "Você está com obesidade grau 1";
+            }
+            else if (IMC >= 35 && IMC < 40) {
+                resultado = "Você está com obesidade grau 2 (severa)";
+            }
+            else if (IMC >= 40) {
+                resultado = "Você está com obesidade grau 3 (Morbida)";
+            }
+            else {
+                resultado = "Dados incorretos";
+            }
+
+            IMC = IMC.toFixed(2);
+
+            resultado = resultado + " IMC: " + IMC;
+
+            document.getElementById("resultado").textContent = resultado;
+        }
+    </script>
+</body>
+</html>

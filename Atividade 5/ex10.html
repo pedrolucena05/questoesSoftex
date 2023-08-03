@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Qual o mês?</h2>
+    <label for="mes_numero">Mês: </label>
+    <input type="text" id="mes">
+
+    <br>
+
+    <button onclick="qualMes()">Mês escrito</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function qualMes () {
+            const mes = parseInt(document.getElementById("mes").value);
+
+            let resultado = "";
+
+            if (!(isNaN(mes)) && mes >= 1 && mes <= 12) {
+                const meses = {
+                    1: "Janeiro" ,
+                    2: "Fevereiro" ,
+                    3: "Março" ,
+                    4: "Abril" , 
+                    5: "Maio" ,
+                    6: "Junho" ,
+                    7: "Julho" ,
+                    8: "Agosto" ,
+                    9: "Setembro" ,
+                    10: "Outrubro" ,
+                    11: "Novembro" ,
+                    12: "Dezembro"
+                }
+                resultado = meses[mes];
+            }
+
+            else {
+                resultado = "Dado inválido!";
+            }
+
+            document.getElementById("resultado").textContent = resultado;
+
+        }  
+    </script>
+</body>
+</html>
