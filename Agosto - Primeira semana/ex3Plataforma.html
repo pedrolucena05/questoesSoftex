@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista encadeada</h1>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="idade">Idade:</label>
+    <input type="text" id="idade" name="idade">
+
+    <button id="adicionar">Adicionar</button>
+    <button id="mostrar">Mostrar</button>
+
+    <p id="resultado">Lista encadeada inicializada...</p>
+
+    <script>
+        
+        let cabeca = null;
+        class Node {
+            constructor(nome, idade, proximo) {
+                this.nome = nome;
+                this.idade = idade;
+                this.proximo = proximo;
+            }
+        }
+
+        function addLast(pessoa) {
+                if (cabeca == null) {
+                    cabeca = pessoa;
+                }
+                else {
+                    let percorrer = cabeca;
+                    while (percorrer.proximo != null) {
+                        percorrer = percorrer.proximo;
+                    }
+                    percorrer.proximo = pessoa;
+                }
+        }
+
+        function criarNo (nome, idade) {
+            let pessoa = new Node(nome, idade, null);
+            addLast(pessoa);
+        }
+
+        function func_mostrarTudo () {
+            let lista = [];
+            percorrer = cabeca;
+            while (percorrer != null) {
+                lista.push(percorrer);
+                percorrer = percorrer.proximo;
+            }
+            console.log(lista);
+            let res = document.getElementById("resultado");
+            res.innerHTML = "<p></p>";
+            let cont = 0;
+            while (cont<lista.length){
+                res.innerHTML += "<p>" + lista[cont].nome + " - " + lista[cont].idade + "</p>";
+                cont++;
+            }
+        } 
+
+        /*
+        const pessoa1 = new Node("Pedro", "27", null);
+        const pessoa2 = new Node("Maria", "24", null);
+        addLast(pessoa1);
+        addLast(pessoa2);
+        */
+
+        const addNovo = document.getElementById("adicionar");
+        const mostrarTudo = document.getElementById("mostrar");
+
+        addNovo.addEventListener('click' , function() {
+            const nomeInput = document.getElementById("nome");
+            const idadeInput = document.getElementById("idade");
+            criarNo(nomeInput.value, idadeInput.value);
+            nomeInput.value = '';
+            idadeInput.value = '';
+            let res = document.getElementById("resultado");
+            res.innerHTML = "Pessoa adicionada com sucesso!";
+        });
+
+        mostrarTudo.addEventListener('click' , func_mostrarTudo);
+
+    </script>
+</body>
+</html>
