@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // O melhor seria a busca linear porque a lista nao esta ordenada
+        let lista = [15, 8, 10, 25, 12, 30, 5, 20, 18, 7];
+
+        let flag = 0
+
+        for (let i = 0; i < lista.length; i++) {
+            if (lista[i] == 20) {
+                console.log("O valor foi encontrado | Valor: 20");
+                flag = 1
+            }
+        }
+        if (flag == 0) {
+            console.log("O valor nao foi encontrado");
+        }
+
+    </script>
+</body>
+</html>
