@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let caractere = prompt("Caractere:").toLowerCase(); // Converte para minúsculo para facilitar a comparação
+
+        if (caractere.length == 1 && /^[a-z]$/.test(caractere)) {
+            if ("aeiou".includes(caractere)) {
+                console.log("O caractere é uma vogal.");
+            } 
+            else {
+                console.log("O caractere é uma consoante.");
+            }
+        } 
+        else {
+            console.log("Entrada inválida.");
+        }
+    </script>
+</body>
+</html>

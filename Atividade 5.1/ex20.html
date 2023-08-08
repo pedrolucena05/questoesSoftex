@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let nome = prompt("Nome:");
+        let idadeInput = prompt("Idade:");
+
+        try {
+            var idade = parseInt(idadeInput);
+
+            if (isNaN(idade)) {
+                throw new Error("Idade inválida.");
+            }
+
+            console.log("Nome: " + nome);
+            console.log("Idade: " + idade);
+        } 
+        catch (erro) {
+            console.log("Erro: " + erro.message);
+        }
+    </script>
+</body>
+</html>

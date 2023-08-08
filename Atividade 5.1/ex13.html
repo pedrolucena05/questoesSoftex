@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diaSemana = prompt("Digite o dia da semana por extenso:").toLowerCase(); // Converte para minúsculo para facilitar a comparação
+
+        if (diaSemana === "segunda-feira" || diaSemana === "terça-feira" || diaSemana === "quarta-feira" || diaSemana === "quinta-feira" || diaSemana === "sexta-feira" || diaSemana === "segunda feira" || diaSemana === "terça feira" || diaSemana === "quarta feira" || diaSemana === "quinta feira" || diaSemana === "sexta feira" || diaSemana === "segunda" || diaSemana === "terça" || diaSemana === "quarta" || diaSemana === "quinta" || diaSemana === "sexta") {
+            console.log(diaSemana + " é um dia útil.");
+        } 
+        else if (diaSemana === "sábado" || diaSemana === "domingo") {
+            console.log(diaSemana + " é um fim de semana.");
+        } 
+        else {
+            console.log("Dia da semana inválido.");
+        }
+    </script>
+</body>
+</html>

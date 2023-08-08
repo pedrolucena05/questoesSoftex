@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let metrosInput = prompt("Digite um valor em metros:");
+
+        try {
+    
+            var metros = parseFloat(metrosInput);
+
+            if (isNaN(metros)) {
+                throw new Error("Valor inválido.");
+            }
+
+
+            var centimetros = metros * 100;
+            var milimetros = metros * 1000;
+            var quilometros = metros / 1000;
+
+
+            console.log(metros + " metros é igual a:");
+            console.log(centimetros + " centímetros");
+            console.log(milimetros + " milímetros");
+            console.log(quilometros + " quilômetros");
+        } catch (erro) {
+            console.log("Erro: " + erro.message);
+        }
+    </script>
+</body>
+</html>

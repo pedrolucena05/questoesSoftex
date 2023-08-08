@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeroDecimal = prompt("Digite um número decimal:");
+
+        try {
+            // Tentar converter o número decimal para um número de ponto flutuante
+            var numeroFloat = parseFloat(numeroDecimal);
+
+            // Arredondar o número para o inteiro mais próximo
+            var numeroInteiro = Math.round(numeroFloat);
+
+            // Exibir o resultado
+            console.log("Número decimal: " + numeroFloat);
+            console.log("Número inteiro arredondado: " + numeroInteiro);
+        } catch (erro) {
+            console.log("Erro: " + erro.message);
+        }
+    </script>
+</body>
+</html>
