@@ -1,0 +1,11 @@
+Dada a seguimte lista: [3, 7, 9, 1, 0]. A ordem de remocao para cada estrutura de dados seria:
+
+Fila: os elementos são removidos na mesma ordem em que foram inseridos. Portanto, a sequência de remoção seria: 3, 7, 9, 1, 0.
+Lista: podemos remover elementos de qualquer posição, mas considerando que estamos seguindo a ordem de inserção, a sequência de remoção seria: 3, 7, 9, 1, 0.
+Pilha: o último elemento inserido é o primeiro a ser removido. Portanto, a sequência de remoção seria: 0, 1, 9, 7, 3.
+
+
+
+
+
+
