@@ -18,15 +18,31 @@ body {
 }
 
 .cont {
+    width: 942px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(16, 16, 59);
+}
+
+.sep1 {
+    margin-right: 2.5%;
+}
+
+.sep2 {
+    margin-left: 2.5%;
 }
 
 button {
     margin-top: 5%;
     width: 10%;
     height: 15%;
+}
+
+.programador {
+    color: aliceblue;
+    text-align: center;
 }
 
 
