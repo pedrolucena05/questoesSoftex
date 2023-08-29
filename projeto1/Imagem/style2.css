@@ -1,0 +1,39 @@
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+    color: rgb(17, 17, 17);
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: rgb(42, 42, 42)
+}
+
+.divisao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cantoDireito {
+    margin-left: 30px;
+}
+
+.cantoEsquerdo {
+    margin-right: 30px;
+}
+
+.linha2 {
+    margin-top: 20px;
+}
+
+
+
+body {
+    background-color: beige;
+}
