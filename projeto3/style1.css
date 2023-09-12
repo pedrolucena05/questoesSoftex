@@ -1,0 +1,54 @@
+header {
+    height: 50px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+header h2 {
+    color: aliceblue;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.img_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+img {
+    width: 48%;
+    height: 350px;
+   
+}
+
+footer {
+    height: 70px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: aliceblue;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

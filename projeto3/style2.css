@@ -1,0 +1,138 @@
+header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; /* Exiba os itens da lista em linha (um ao lado do outro) */
+    margin-right: 20px; /* Adicione espaço entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue; /* Adicione a cor desejada */
+    font-weight: 700;
+}
+
+.first_item {
+    margin-right: 3px;
+}
+
+.last_item {
+    margin-right: 45px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.float_paragraph {
+    padding-left: 430px;
+    margin-right: 10px;
+}
+
+.float_paragraph2 {
+    padding-left: 5px;
+}
+
+.paragrafo_margin {
+    margin-top: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin: 5px 0 20px 0;
+    font-size: 35px;
+}
+
+.divisor {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-size: 15px; 
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main h1 {
+    margin: 50px 0 25px 2%;
+    font-size: 28px;
+}
+
+.img1 {
+    float: left;
+    
+}
+
+.img2 {
+    float: right;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    margin: 25px 0 35px 0;
+}
+
+.mais_imagens {
+    display: inline;
+}
+
+.primeiro_paragrafo {
+    text-indent: 30px;
+}
+
+.maisImagens {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img3 {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.img4 {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(46, 46, 46);
+    margin-top: 30px;
+}
+.rodape {
+    height: 80px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: aliceblue; /* Adicione a cor desejada */
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
