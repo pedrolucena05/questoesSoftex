@@ -8,19 +8,19 @@
 <body>
     <script>
         while (true) {
-            let nome = prompt("Nome:");
+            var nome = prompt("Nome:");
             while (typeof nome != "string") {
                 nome = prompt("Nome invalido, digite um nome verdadeiro: ");
             }
-            let salario = Number(prompt("Salario:"));
+            var salario = Number(prompt("Salario:"));
             while (typeof salario != "number" || isNaN(salario)) {
                 salario = Number(prompt("Salario invalido, digte um valor de salario verdadeiro: "));
             }
-            let idade = Number(prompt("Idade: "))
+            var idade = Number(prompt("Idade: "))
             while ((idade < 0 && idade > 120) || isNaN(idade)) {
                 idade = Number(prompt("Idade invalida, digte um valor de idade verdadeira: "));
             }
-            let diploma = Number(prompt("Possui diploma? Digite 1 para sim e 2 para nao."));
+            var diploma = Number(prompt("Possui diploma? Digite 1 para sim e 2 para nao."));
             while ((diploma != 1 && diploma != 2) || isNaN(diploma)) {
                 diploma = Number(prompt("Dado de diploma invalido, Digite 1 para sim e 2 para nao."));
             }
@@ -30,7 +30,7 @@
             else {
                 var diploma_bool = false;
             }
-            let op = Number(prompt("Deseja fechar o programa? digite 1 para sim e 2 para nao."));
+            var op = Number(prompt("Deseja fechar o programa? digite 1 para sim e 2 para nao."));
             while (op != 1 && op != 2) {
                 op = Number(prompt("Dado de saida invalido, Digite 1 para sim e 2 para nao."));
             }
@@ -38,6 +38,8 @@
                 break;
             }
         }
+        console.log("Tipo das variaveis\n" + "Nome: " + typeof nome + "\n" + "Salario: " + typeof salario + "\n" + "Idade: " + typeof idade + "\n" + "Diploma: " + typeof diploma_bool)
+        alert("Tipo das variaveis\n" + "Nome: " + typeof nome + "\n" + "Salario: " + typeof salario + "\n" + "Idade: " + typeof idade + "\n" + "Diploma: " + typeof diploma_bool)
     </script>
 </body>
 </html>
