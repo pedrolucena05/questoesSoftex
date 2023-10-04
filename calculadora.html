@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        let res;
+       
+        
+        let a = parseFloat(prompt("Primeiro numero: "));
+        let b = parseFloat(prompt("Segundo numero: "));
+        let op = prompt("Operador (+ , - , * , / , pot): ");
+        
+        
+
+        switch (op) {
+            case '+':
+                res = a+b; 
+                break;
+            
+            case '-':
+                res = a-b; 
+                break;
+            
+            case '*':
+                res = a*b; 
+                break;
+            
+            case '/':
+                res = a/b; 
+                break;
+            
+            op = op.toLowerCase();
+            
+            case 'pot':
+                res = a**b; 
+                break;
+
+        }
+
+        alert("Resultado: " + res);
+        a=0;
+        b=0;
+        op= null;
+        res = 0;
+
+    </script>
+</body>
+</html>
