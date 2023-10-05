@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        function funcaoSemParametros() {
+            console.log("Esta é uma função tradicional sem parâmetros.");
+        }
+        
+        function soma(a, b) {
+            return a + b;
+        }
+        
+        const multiplicacao = (a, b) => a * b;
+        
+        funcaoSemParametros(); 
+        
+        const resultadoSoma = soma(8, 2); 
+        console.log("Resultado da soma:", resultadoSoma);
+        
+        const resultadoMultiplicacao = multiplicacao(6, 3); 
+        console.log("Resultado da multiplicação:", resultadoMultiplicacao);
+        
+    </script>
+</body>
+</html>
