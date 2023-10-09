@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta bancária</title>
+</head>
+<body>
+    <script>
+        
+        function Banco(conta, saldo, tipoConta, agencia) {
+            this.conta = conta;
+            this.saldo = saldo;
+            this.tipoConta = tipoConta;
+            this.agencia = agencia;
+        
+            this.buscarSaldo = function() {
+                return this.saldo;
+            };
+
+            this.deposito = function(valor) {
+                if (valor > 0) {
+                this.saldo += valor;
+                return "Depósito de R$" + valor + " realizado com sucesso. Novo saldo: R$" + this.saldo;
+                } else {
+                return "Valor inválido para depósito.";
+                }
+            };
+
+            this.saque = function(valor) {
+                if (valor > 0 && valor <= this.saldo) {
+                this.saldo -= valor;
+                return "Saque de R$" + valor + " realizado com sucesso. Novo saldo: R$" + this.saldo;
+                } else {
+                return "Saldo insuficiente ou valor de saque inválido.";
+                }
+            };
+
+            this.numeroDaConta = function() {
+                return this.conta;
+            };
+        }
+
+        var minhaConta = new Banco("22458-2", 1800.0, "Corrente", "49");
+
+        console.log("Saldo atual: R$" + minhaConta.buscarSaldo());
+        console.log(minhaConta.deposito(620));
+        console.log(minhaConta.saque(180));
+        console.log("Número da conta: " + minhaConta.numeroDaConta());
+
+    </script>
+</body>
+</html>
