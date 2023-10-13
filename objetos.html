@@ -9,89 +9,89 @@
     <script>
         // Objeto Concreto: Carro
         class Carro {
-        constructor(modelo, ano, cor) {
-            this.modelo = modelo;
-            this.ano = ano;
-            this.cor = cor;
-            this.estaLigado = false;
-        }
+            constructor(modelo, ano, cor) {
+                this.modelo = modelo;
+                this.ano = ano;
+                this.cor = cor;
+                this.estaLigado = false;
+            }
 
-        ligar() {
-            this.estaLigado = true;
-            console.log(`O carro ${this.modelo} foi ligado.`);
-        }
+            ligar() {
+                this.estaLigado = true;
+                console.log(`O carro ${this.modelo} foi ligado.`);
+            }
 
-        desligar() {
-            this.estaLigado = false;
-            console.log(`O carro ${this.modelo} foi desligado.`);
-        }
+            desligar() {
+                this.estaLigado = false;
+                console.log(`O carro ${this.modelo} foi desligado.`);
+            }
 
-        acelerar(velocidade) {
-            console.log(`O carro ${this.modelo} está acelerando para ${velocidade} km/h.`);
-        }
+            acelerar(velocidade) {
+                console.log(`O carro ${this.modelo} está acelerando para ${velocidade} km/h.`);
+            }
         }
 
         // Objeto Concreto: Cachorro
         class Cachorro {
-        constructor(nome, idade, raca) {
-            this.nome = nome;
-            this.idade = idade;
-            this.raca = raca;
-        }
+            constructor(nome, idade, raca) {
+                this.nome = nome;
+                this.idade = idade;
+                this.raca = raca;
+            }
 
-        latir() {
-            console.log(`${this.nome} está latindo.`);
-        }
+            latir() {
+                console.log(`${this.nome} está latindo.`);
+            }
 
-        correr() {
-            console.log(`${this.nome} está correndo.`);
-        }
+            correr() {
+                console.log(`${this.nome} está correndo.`);
+            }
 
-        dormir() {
-            console.log(`${this.nome} está dormindo.`);
-        }
+            dormir() {
+                console.log(`${this.nome} está dormindo.`);
+            }
         }
 
         // Objeto Abstrato: Veículo
         class Veiculo {
-        constructor(modelo, ano, cor) {
-            this.modelo = modelo;
-            this.ano = ano;
-            this.cor = cor;
-        }
+            constructor(modelo, ano, cor) {
+                this.modelo = modelo;
+                this.ano = ano;
+                this.cor = cor;
+            }
 
-        ligar() {
-            console.log(`O veículo ${this.modelo} foi ligado.`);
-        }
+            ligar() {
+                console.log(`O veículo ${this.modelo} foi ligado.`);
+            }
 
-        desligar() {
-            console.log(`O veículo ${this.modelo} foi desligado.`);
-        }
+            desligar() {
+                console.log(`O veículo ${this.modelo} foi desligado.`);
+            }
 
-        mover() {
-            console.log(`O veículo ${this.modelo} está se movendo.`);
-        }
+            mover() {
+                console.log(`O veículo ${this.modelo} está se movendo.`);
+            }
         }
 
         // Objeto Abstrato: Animal
         class Animal {
-        constructor(nome, idade, especie) {
-            this.nome = nome;
-            this.idade = idade;
-            this.especie = especie;
-        }
+            constructor(nome, idade, especie) {
+                this.nome = nome;
+                this.idade = idade;
+                this.especie = especie;
+            }
 
-        emitirSom() {
-            console.log(`${this.nome} está emitindo um som.`);
-        }
+            emitirSom() {
+                console.log(`${this.nome} está emitindo um som.`);
+            }
 
-        mover() {
-            console.log(`${this.nome} está se movendo.`);
-        }
+            mover() {
+                console.log(`${this.nome} está se movendo.`);
+            }
 
-        descansar() {
-            console.log(`${this.nome} está descansando.`);
-        }
+            descansar() {
+                console.log(`${this.nome} está descansando.`);
+            }
         }
 
         // Demonstração dos objetos
