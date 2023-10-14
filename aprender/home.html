@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a Aprender</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="home">Home</a>
+            <nav>
+                <a href="#">Quem Somos</a>
+                <a href="#">Matrícula</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="divisao">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--Fim Radio Buttons-->
+
+                    <!--Slide Images-->
+                    <div class="slide first">
+                        <img src="img8.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img9.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img11.jpg" alt="Imagem 3">
+                    </div>
+                    <div class="slide">
+                        <img src="img13.jpg" alt="Imagem 4">
+                    </div>
+                    <!--Fim Slide Images-->
+
+                    <!--Navigation Auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn auto-btn1"></label>
+                <label for="radio2" class="manual-btn auto-btn2"></label>
+                <label for="radio3" class="manual-btn auto-btn3"></label>
+                <label for="radio4" class="manual-btn auto-btn4"></label>
+            </div>
+            <img src="vertical.png" alt="logo" width="550px" class="logo-principal">
+        </div>
+    </main>
+
+    <script>
+        
+        let count = 1;
+        
+        document.getElementById("radio1").checked = true;
+
+        setInterval( function() {
+            nextImage();
+        }, 3500)
+
+        function nextImage() {
+            count++;
+            if (count > 4) {
+                count = 1;
+            }
+        
+            document.getElementById("radio"+count).checked = true;
+        }
+
+    </script>
+</body>
+</html>
