@@ -1,0 +1,251 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    height: 60px;
+    background-color: rgb(227, 179, 96);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.home {
+    display: inline;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Gabarito', sans-serif;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    font-style: italic;
+} 
+
+nav a {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Gabarito', sans-serif;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    font-style: italic;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.divisao {
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(227, 179, 96);
+}
+
+.slider {
+    overflow: hidden;
+    width: 60%;
+    height: calc(100vh - 75px);
+    position: relative;
+    
+}
+
+.texto {
+    position: absolute;
+    bottom: 25%;
+    left: 6%;
+    width: 100%;
+    
+}
+
+.texto h4 {
+    background-color: rgba(255, 166, 0, 0.856);
+    color: white;
+    display: inline;
+    padding: 8px;
+    font-size: 60px;
+    margin-bottom: 200px;
+}
+
+.texto span {
+    background-color: rgba(255, 166, 0, 0.658);
+    color: white;
+    display: inline;
+    padding: 4px;
+    font-size: 25px;
+}
+
+.logo-principal {
+    padding-right: 10%;
+    margin-right: -3.5%;
+}
+
+.slides {
+    width: 400%;
+    height: calc(100vh - 75px);
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    
+}
+
+.slide img {
+    width: 100%;
+    height: calc(100vh - 75px);
+    float: right;
+}
+
+.posicao {
+    height: calc(50vh - 75px);
+    border: 2px solid black;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+}
+
+.manual-btn {
+    border: 3px solid rgb(100, 100, 100);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-top: calc(100vh - 17.5%);
+    transition: 1s;
+}
+
+.manual-btn:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+#radio1:checked ~ .first {
+    transition: 2s;
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    transition: 1s;
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    transition: 1s;
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    transition: 1s;
+    margin-left: -75%;
+}
+
+#radio1:checked {
+    background-color: antiquewhite;
+}
+
+#radio2:checked {
+    background-color: antiquewhite;
+}
+
+#radio3:checked ~ .manual-navigation .auto-btn3 {
+    background-color: antiquewhite;
+}
+
+#radio4:checked ~ .manual-navigation .auto-btn4 {
+    background-color: antiquewhite;
+}
+
+#faixa {
+    color: rgb(227, 179, 96);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+section{
+    display: inline-block;
+    margin-top: 1px;
+    /*border: 1px solid black;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    /* height: 400px; */
+    padding: 5%;
+    text-align: center;
+    /*width: 90%; */
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Gabarito', sans-serif;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    font-style: italic;
+   }
+
+.hotelzinho {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.card:hover{
+    background: rgb(240, 72, 72);
+    color: white;
+    padding: 21px;
+}
+
+.card:hover .texto-principal{
+    display: none;
+}
+
+footer{
+    margin-top: 50px;
+    height: 100px;
+    background-image: linear-gradient(180deg,  rgb(227, 179, 96),white);
+    border-top: 5px rgb(238, 167, 228);
+    text-align: center;
+}
+
+.container {
+    align-items: center;    
+}
+
+footer h1{
+    font-family: 'Gabarito', sans-serif;
+    font-size: 14px;
+    color: rgb(37, 37, 37);   
+}
+
+
