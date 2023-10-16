@@ -146,17 +146,17 @@ nav a:hover {
 }
 
 #radio2:checked ~ .first {
-    transition: 1s;
+    transition: 2s;
     margin-left: -25%;
 }
 
 #radio3:checked ~ .first {
-    transition: 1s;
+    transition: 2s;
     margin-left: -50%;
 }
 
 #radio4:checked ~ .first {
-    transition: 1s;
+    transition: 2s;
     margin-left: -75%;
 }
 
