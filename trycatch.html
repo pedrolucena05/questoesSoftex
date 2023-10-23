@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try-Catch</title>
+</head>
+<body>
+    <script>
+        let num1, num2;
+
+        try {
+        num1 = parseFloat(prompt("Digite o primeiro número:"));
+        if (isNaN(num1)) {
+            throw new Error("O valor informado não é um número válido. Tente novamente.");
+        }
+
+        num2 = parseFloat(prompt("Digite o segundo número:"));
+        if (isNaN(num2)) {
+            throw new Error("O valor informado não é um número válido. Tente novamente.");
+        }
+
+        // Realiza a operação desejada, por exemplo, divisão.
+        const resultado = num1 / num2;
+        if (!isFinite(resultado)) {
+            throw new Error("Resultado indefinido. Verifique os números fornecidos.");
+        }
+
+        console.log("O resultado da operação é: " + resultado);
+        } catch (error) {
+        console.error("Ocorreu um erro: " + error.message);
+        } finally {
+        console.log("Fim da execução do bloco try-catch.");
+        }
+
+    </script>
+</body>
+</html>
