@@ -1,0 +1,30 @@
+1- Objetivos e Requisitos: Fornecer informações sobre passagens aéreas. Permitir busca, reserva e compra de passagens. Integração com sistemas de pagamento.
+Gerenciar informações de voos e disponibilidade.
+
+2- Tecnologias Apropriadas: Linguagem de programação Node.js. Frameworks Express.js (Node.js). Protocolos RESTful API com HTTP/HTTPS.
+Formatos de dados JSON para troca de informações.
+
+3- Estrutura do Web Service: Endpoints /flights, /booking, /payment. Métodos GET para consultar, POST para reservar/comprar, PUT para atualizações, DELETE para cancelamentos.
+Dados estruturados em JSON para requisições e respostas.
+
+4- Implementação do Web Service: Exemplo em espress.js (Node) para criar endpoints, manipular dados e interagir com o banco de dados.
+Utilização de bibliotecas para lidar com autenticação e autorização. Implementação de lógica para integração de pagamentos.
+
+5- Teste do Web Service: Testes unitários e de integração, Uso de ferramentas como Postman para testar endpoints manualmente e implementação de testes automatizados para garantir funcionalidades críticas.
+
+6- Documentação do Web Service: uso de ferramentas como Swagger para documentação automática, documentação detalhada de cada endpoint, parâmetros, formatos de resposta e
+exemplos práticos de uso.
+
+7- Medidas de Segurança: Autenticação via tokens (JWT), autorização baseada em papéis de usuário, comunicação segura com HTTPS, validar e sanitizar entradas para prevenir injeções.
+
+8- Implantação do Web Service: Utilização de serviços de nuvem (AWS, GCP) ou servidores dedicados e configuração de servidor web (por exemplo, Nginx) como proxy reverso.
+
+9- Monitoramento e Manutenção: Uso de ferramentas de monitoramento (por exemplo, Prometheus), logs detalhados para rastreamento de erros,
+atualizações e correções gerenciadas por um sistema de controle de versão.
+
+10- Resumo: Construir o web service envolve escolhas cuidadosas de tecnologias, implementação segura, testes rigorosos, documentação clara e manutenção contínua.
+Cada passo, desde a concepção até a implantação, é crucial para garantir um serviço confiável e seguro para a aplicação de comércio eletrônico.
+
+
+
+
